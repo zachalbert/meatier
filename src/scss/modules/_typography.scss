@@ -1,0 +1,108 @@
+////// Typography //////
+
+$display-stack:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-stack:     "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono-stack:     "Source Code Pro", Monaco, Courier New, Courier, mono;
+$weight-light:   200;
+$weight-normal:  400;
+$weight-bold:    700;
+
+$font-size-05:  0.75rem;
+$font-size-1:   1rem;
+$font-size-2:   1.5rem;
+$font-size-3:   1.875rem;
+$font-size-4:   2.25rem;
+$font-size-5:   3.375rem;
+$font-size-6:   5.0625rem;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $body-stack;
+  font-weight: $weight-normal;
+  font-style: normal;
+  text-align: left;
+}
+
+em     { font-weight: $weight-light; }
+strong { font-weight: $weight-bold; }
+
+h1,
+.h1 {
+  font-family: $display-stack;
+  font-weight: $weight-bold;
+  line-height: $line-height * 2;
+  font-size: $font-size-4;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-style: normal;
+  margin: 0 0 $lead-single;
+  text-align: center;
+  color: $color-background-light;
+}
+
+h2,
+.h2 {
+  font-family: $body-stack;
+  font-weight: $weight-bold;
+  font-size: $font-size-2;
+  line-height: $line-height;
+  font-style: normal;
+  margin: 0 0 $lead-single;
+}
+
+h3,
+.h3 {
+  font-family: $body-stack;
+  font-weight: $weight-bold;
+  font-size: $font-size-1;
+  line-height: $line-height;
+  font-style: normal;
+}
+
+h4,
+.h4,
+small,
+.small {
+  text-transform: uppercase;
+  font-size: $font-size-05;
+  letter-spacing: 0.03rem;
+  color: $color-text-light;
+}
+
+.meta-text {
+  @extend .small;
+  color: $color-link;
+  line-height: $line-height;
+}
+
+blockquote {
+  @extend .small;
+  font-size: $font-size-1;
+  line-height: $line-height * 1.5;
+  font-style: italic;
+  text-align: justify;
+}
+
+cite {
+  @extend .small;
+}
+
+pre,
+code,
+tt {
+  font-family: $mono-stack;
+  font-size: 0.85rem;
+}
+
+tt {
+  padding: 0.3rem 0.5rem;
+  background: $color-background-light;
+  border-radius: $border-radius;
+  margin: 0 0.1rem;
+  line-height: 1;
+}

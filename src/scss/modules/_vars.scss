@@ -1,0 +1,75 @@
+// 42em > 42
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+////// Color Palette //////
+
+$primary:                 #AB0000;
+$secondary:               #D6A3A3;
+
+$color-dark:              #590000;
+$color-light:             lighten($primary, 15%);
+
+$color-background:        $color-dark;
+$color-background-light:  lighten($color-background, 8%);
+$color-background-dark:   darken($color-background, 6%);
+
+$color-overlay:           rgba($color-dark, 0.35);
+$color-shadow:            rgba(#000, 0.15);
+
+$color-border:            rgba($color-dark, .2);
+$color-border-dark:       rgba($color-dark, .4);
+
+$color-text:              $secondary;
+$color-text-light:        #81818D;
+
+$color-link:              #D60000;
+$color-link-hover:        darken($color-link, 5%);
+
+$grid-1:                  rgba(255, 255, 255, 0);
+$grid-2:                  rgba(0, 0, 0, 0.1);
+
+$color-selection:         #fff;
+$color-selection-bg:      $secondary;
+
+
+
+////// Grid //////
+
+
+
+////// Type Scale //////
+
+$scale: 1.5;
+$font-size: 18px;
+$base: strip-unit($font-size);
+$line-height: $font-size * $scale;
+
+// Strips of lead
+$lead-half:        $line-height / 2;
+.lead-half       { margin-bottom: $line-height / 2; }
+
+$lead-single:      $line-height;
+.lead-single     { margin-bottom: $line-height; }
+
+$lead-double:      $line-height * 2;
+.lead-double     { margin-bottom: $line-height * 2; }
+
+$lead-triple:      $line-height * 3;
+.lead-triple     { margin-bottom: $line-height * 3; }
+
+$lead-quadruple:   $line-height * 4;
+.lead-quadruple  { margin-bottom: $line-height * 4; }
+
+$lead-quintuple:   $line-height * 5;
+.lead-quintuple  { margin-bottom: $line-height * 5; }
+
+
+
+////// Site //////
+
+$transition-out: all 0.15s ease-out;
+$transition-in:  all 0.1s ease-in;
+
+$border-radius:  3px;
