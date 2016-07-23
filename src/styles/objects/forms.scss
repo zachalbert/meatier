@@ -1,0 +1,59 @@
+.form-element {
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  color: palette(default, dark);
+  display: inline-block;
+  font-weight: $weight-normal;
+  margin-bottom: $lead-single;
+  outline: none;
+  height: $type-scale * 2.25;
+  letter-spacing: 1px;
+  line-height: $lead-single;
+  font-size: $type-scale-1;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: top;
+  &--text {
+    @extend .form-element;
+    box-shadow: 0 3px 0 palette(default,lighter);
+  }
+  &--select {
+    @extend .form-element;
+    cursor: pointer;
+  }
+  &--fw {
+    width: 100%;
+  }
+}
+
+.form-element-label {
+  color: palette(default, dark);
+  font-size: $type-scale-0;
+  font-weight: $weight-bold;
+}
+
+.form {
+  .form-element-label {
+    display: inline-block;
+  }
+}
+
+.form-element-wrap {
+  position: relative;
+  .icon {
+    font-size: $type-scale-1;
+    line-height: $lead-single;
+    padding: $type-scale-1 * .5 $type-scale-1;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: palette(default, accent);
+   font-size: $type-scale-0;
+}

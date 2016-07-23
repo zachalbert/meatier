@@ -1,3 +1,9 @@
+/* All unclassed elements (a, section, etc), and other defaults (like base font-size) */
+
+body {
+  background: palette(default,lighter);
+}
+
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
@@ -27,6 +33,22 @@ body {
     background: linear-gradient($grid-1, $grid-1 $grid-line, $grid-2 $grid-line, $grid-2);
     background-size: 100% $lead-single;
   }
+}
+
+::selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+  text-shadow: none;
+}
+::-webkit-selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+  text-shadow: none;
 }
 
 a {

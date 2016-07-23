@@ -1,0 +1,39 @@
+.button {
+  appearance: none;
+  background: palette(default, dark);
+  border-radius: $radius-size-1;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: $shadow-1;
+  color: palette(default, dark);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $weight-bold;
+  font-size: $type-scale-0;
+  letter-spacing: 1px;
+  line-height: $lead-half;
+  padding: $lead-half $lead-single;
+  text-align: center;
+  text-decoration: none;
+  transition: all .33s;
+  vertical-align: top;
+  @include all-caps;
+  &--primary {
+    background: palette(default, dark);
+    color: white;
+  }
+  &--secondary {
+    background: white;
+    color: palette(brown, light);
+  }
+  &--tertiary {
+    background: palette(brown, light);
+    color: white;
+  }
+  &--full {
+    width: 100%;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}

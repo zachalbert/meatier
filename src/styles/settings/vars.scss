@@ -1,0 +1,47 @@
+////// Typography //////
+
+$display-stack:  "Libre Baskerville", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-stack:     "Source Sans Pro", Helvetica, Arial, sans-serif;
+$mono-stack:     Monaco, Courier New, Courier, mono;
+$weight-light:   200;
+$weight-normal:  400;
+$weight-bold:    700;
+
+////// Type Scale //////
+
+$scale: 1.5;
+$type-scale: 20px;
+$base: strip-unit($type-scale);
+$line-height: $type-scale * $scale;
+
+$type-scale-0:   0.6666666667rem; //12
+$type-scale-1:   0.9rem; //18
+$type-scale-2:   1rem; //20
+$type-scale-3:   1.35rem; //27
+$type-scale-4:   1.5rem; //30
+$type-scale-5:   3rem; //60
+
+// Strips of lead
+$lead-half:        $line-height / 2;
+.lead-half       { margin-bottom: $line-height / 2; }
+
+$lead-single:      $line-height;
+.lead-single     { margin-bottom: $line-height; }
+
+$lead-double:      $line-height * 2;
+.lead-double     { margin-bottom: $line-height * 2; }
+
+$lead-triple:      $line-height * 3;
+.lead-triple     { margin-bottom: $line-height * 3; }
+
+$lead-quadruple:   $line-height * 4;
+.lead-quadruple  { margin-bottom: $line-height * 4; }
+
+$lead-quintuple:   $line-height * 5;
+.lead-quintuple  { margin-bottom: $line-height * 5; }
+
+/* RADIUS */
+$radius-size-1:         2px;
+
+/* SHADOWS */
+$shadow-1:              0 3px 6px rgba(0,0,0,.15);

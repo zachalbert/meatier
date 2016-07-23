@@ -1,0 +1,10 @@
+////// All Caps //////
+
+/* INCLUDES ALL CAPS FOR BUTTONS, LABELS, ETC IF TRUE IN _vars.scss */
+@mixin all-caps($bool: $all-caps){
+  @if $bool == true {
+    text-transform: uppercase;
+  } else {
+    text-transform: normal;
+  }
+}

@@ -1,0 +1,59 @@
+////// TC Color Palette //////
+
+$palettes: (
+  // Default Palette
+  default:(
+    lightest:     #F3F4F6,
+    lighter:      #E8E9ED,
+    light:        #A1A2A6,
+    mid:          #595C61,
+    dark:         #26282B,
+    darker:       #0C0C0D,
+    accent:       #CC9D5A,
+    dark-accent:  #A36217
+  ),
+  // Blue Palette
+  blue:(
+    lighter:      #E4E6EB,
+    light:        #868FA3,
+    mid:          #464F63,
+    dark:         #2F3542,
+    darker:       #242830
+  ),
+  // Brown Palettte
+  brown:(
+    lighter:      #EDE8E1,
+    light:        #CCB79D,
+    mid:          #9F805B,
+    dark:         #695945,
+    darker:       #383128
+  ),
+  // Red Palette
+  red:(
+    lighter:      #EDE7E6,
+    light:        #A1716C,
+    mid:          #70322C,
+    dark:         #4A211D,
+    darker:       #331512
+  ),
+  // Purple Palette
+  purple:(
+    lighter:      #E8E3E6,
+    light:        #85717D,
+    mid:          #5C3F50,
+    dark:         #402B37,
+    darker:       #2E1E27
+  ),
+  // Green Palette
+  green:(
+    lighter:      #E3E8E6,
+    light:        #89A396,
+    mid:          #3D574A,
+    dark:         #2A4035,
+    darker:       #1D2E26
+  )
+);
+
+@function palette($palette, $tone: 'default') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

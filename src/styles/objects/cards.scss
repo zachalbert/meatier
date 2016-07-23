@@ -1,0 +1,11 @@
+////// CARDS //////
+
+.card {
+  background: white;
+  border-radius: $radius-size-1;
+  box-shadow: $shadow-1;
+  padding: $lead-single $lead-single $lead-single*1.5 $lead-single;
+  &--cozy {
+    padding: $lead-double;
+  }
+}

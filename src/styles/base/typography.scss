@@ -1,3 +1,103 @@
+html {
+  font-size: 100%;
+}
+
+body, html {
+  color: palette(default, mid);
+  font-size: $type-scale;
+  line-height: $line-height;
+  font-family: $body-stack;
+  font-weight: $weight-normal;
+  font-style: normal;
+  text-align: left;
+}
+
+em     { font-weight: $weight-light; }
+strong { font-weight: $weight-bold; }
+
+h1,
+.h1 {
+  color: palette(default, dark);
+  font-family: $display-stack;
+  font-weight: $weight-bold;
+  line-height: $line-height * 2.5;
+  font-size: $type-scale-5;
+  letter-spacing: 0.1rem;
+  font-style: normal;
+  margin: 0 0 $lead-single;
+}
+
+h2,
+.h2 {
+  color: palette(default, dark);
+  font-family: $display-stack;
+  font-weight: $weight-bold;
+  font-size: $type-scale-4;
+  line-height: $line-height;
+  font-style: normal;
+  margin: $lead-half 0 $lead-single 0;
+}
+
+h3,
+.h3 {
+  color: palette(default, dark);
+  font-family: $body-stack;
+  font-weight: $weight-bold;
+  font-size: $type-scale-3;
+  line-height: $line-height;
+  font-style: normal;
+  margin: 0 0 $lead-half;
+}
+
+h4,
+.h4,
+small,
+.small {
+  color: palette(default, light);
+  font-size: $type-scale-1;
+  font-weight: $weight-normal;
+  margin: $lead-half 0 $lead-single 0;
+  @include all-caps;
+}
+
+.meta-text {
+  @extend .small;
+  color: palette(default, light);
+  line-height: $line-height;
+}
+
+blockquote {
+  @extend .small;
+  font-size: $type-scale-1;
+  line-height: $line-height * 1.5;
+  font-style: italic;
+  text-align: justify;
+}
+
+cite {
+  @extend .small;
+}
+
+pre,
+code,
+tt {
+  font-family: $mono-stack;
+  font-size: 0.85rem;
+}
+
+tt {
+  padding: 0.3rem 0.5rem;
+  background: palette(default, light);
+  border-radius: $radius-size-1;
+  margin: 0 0.1rem;
+  line-height: 1;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $lead-single;
+}
+
 ////// Typography //////
 
 $display-stack:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
